@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <style>
+    #Gen {
+      position: relative;
+      left: 80px;
+      width: 200px;
+      height: 200px;
+      background-color: gray;
+
+    }
+
+    button {
+      background-color: blue;
+      color: white;
+    }
+
+    #Alto {
+      position: absolute;
+      top: 0px;
+      left: 60px;
+    }
+
+    #Basso {
+      position: absolute;
+      top: 20px;
+      left: 58px;
+    }
+
+    #Sinistra {
+      position: absolute;
+      top: 10px;
+    }
+
+    #Destra {
+      position: absolute;
+      top: 10px;
+      left: 100px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="Gen">
+    <button onclick="Clicca('Alto')" id="Alto">Alto</button>
+    <button onclick="Clicca('Basso')" id="Basso">Basso</button>
+    <button onclick="Clicca('Sinistra')" id="Sinistra">Sinistra</button>
+    <button onclick="Clicca('Destra')" id="Destra">Destra</button>
+  </div>
+  <p id="demo"></p>
+
+  <script>
+    function Clicca(direction) {
+      document.getElementById("demo").innerHTML = direction;
+    }
+  </script>
+</body>
+
+</html>
